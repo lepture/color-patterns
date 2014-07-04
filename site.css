@@ -2,10 +2,37 @@ html, body {
   padding: 0;
   margin: 0;
 }
+body {
+  background-color: #fcfcf9;
+}
 .container {
   padding: 60px 10px;
   max-width: 860px;
   margin: 0 auto;
+}
+#header {
+  text-align: center;
+  padding-bottom: 30px;
+  color: #6b7485;
+}
+#header h1 {
+  font: normal 700 34px/1 "Georgia", serif;
+  text-shadow: 0 1px 0 #fff;
+}
+#header p {
+  font-size: 16px;
+}
+#colors {
+  padding: 40px 0;
+}
+#colors h3 {
+  font: normal 300 12px/1 "Helvetica Neue", sans-serif;
+  color: #888;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+#colors .color {
+  padding: 10px 0 20px;
 }
 .patterns span {
   position: relative;
@@ -23,4 +50,11 @@ html, body {
   cursor: pointer;
   -webkit-transform: scale(1.1);
   z-index: 3;
+}
+
+@media (max-width: 560px) {
+  .patterns span {
+    font-size: 12px;
+    letter-spacing: .04em;
+  }
 }
